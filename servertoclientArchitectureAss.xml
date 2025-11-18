@@ -1,0 +1,49 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36" version="28.2.7">
+  <diagram name="Client-Server Request Response Flow" id="zhsMtx_5HBz4KwUg0IuX">
+    <mxGraphModel dx="769" dy="439" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="ygxsB-6OD_TIc5FXTpOa-1" value="CLIENT (Browser / Mobile)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;dashed=1;" parent="1" vertex="1">
+          <mxGeometry x="330" y="30" width="250" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ygxsB-6OD_TIc5FXTpOa-2" value="API Gateway" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;dashed=1;" parent="1" vertex="1">
+          <mxGeometry x="330" y="120" width="250" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ygxsB-6OD_TIc5FXTpOa-3" value="Backend Server (Auth, Business Logic, KYC, Payment)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;dashed=1;" parent="1" vertex="1">
+          <mxGeometry x="360" y="210" width="450" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="ygxsB-6OD_TIc5FXTpOa-4" value="Database / Redis" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;dashed=1;" parent="1" vertex="1">
+          <mxGeometry x="310" y="350" width="300" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="ygxsB-6OD_TIc5FXTpOa-5" value="Notification Service" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;dashed=1;" parent="1" vertex="1">
+          <mxGeometry x="310" y="450" width="300" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ygxsB-6OD_TIc5FXTpOa-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="ygxsB-6OD_TIc5FXTpOa-1" target="ygxsB-6OD_TIc5FXTpOa-2" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ygxsB-6OD_TIc5FXTpOa-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="ygxsB-6OD_TIc5FXTpOa-2" target="ygxsB-6OD_TIc5FXTpOa-3" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ygxsB-6OD_TIc5FXTpOa-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="ygxsB-6OD_TIc5FXTpOa-3" target="ygxsB-6OD_TIc5FXTpOa-4" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ygxsB-6OD_TIc5FXTpOa-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="ygxsB-6OD_TIc5FXTpOa-4" target="ygxsB-6OD_TIc5FXTpOa-5" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ygxsB-6OD_TIc5FXTpOa-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" parent="1" source="ygxsB-6OD_TIc5FXTpOa-5" target="ygxsB-6OD_TIc5FXTpOa-1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="460" y="530" />
+              <mxPoint x="280" y="530" />
+              <mxPoint x="280" y="330" />
+              <mxPoint x="260" y="330" />
+              <mxPoint x="260" y="10" />
+              <mxPoint x="455" y="10" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
